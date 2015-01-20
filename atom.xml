@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2015-01-20T23:33:56+08:00</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://forestrick.github.io/atom.xml" rel="self"/>
+  <link href="http://forestrick.github.io/"/>
+  <updated>2015-01-21T00:25:11+08:00</updated>
+  <id>http://forestrick.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
     
@@ -14,10 +14,19 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Test2]]></title>
+    <link href="http://forestrick.github.io/blog/2015/01/21/test2/"/>
+    <updated>2015-01-21T00:24:16+08:00</updated>
+    <id>http://forestrick.github.io/blog/2015/01/21/test2</id>
+    <content type="html"><![CDATA[<h1>Test again</h1>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Hello-world]]></title>
-    <link href="http://yoursite.com/blog/2015/01/20/hello-world/"/>
+    <link href="http://forestrick.github.io/blog/2015/01/20/hello-world/"/>
     <updated>2015-01-20T23:31:38+08:00</updated>
-    <id>http://yoursite.com/blog/2015/01/20/hello-world</id>
+    <id>http://forestrick.github.io/blog/2015/01/20/hello-world</id>
     <content type="html"><![CDATA[<h1>Hello World</h1>
 
 <p><em>test1
