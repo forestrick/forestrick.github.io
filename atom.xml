@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Forestrick]]></title>
+  <link href="http://forestrick.github.io/atom.xml" rel="self"/>
+  <link href="http://forestrick.github.io/"/>
+  <updated>2015-02-07T23:25:02+08:00</updated>
+  <id>http://forestrick.github.io/</id>
+  <author>
+    <name><![CDATA[forestrick]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Github-Page-With-Octopress]]></title>
+    <link href="http://forestrick.github.io/blog/2015/02/07/github-page-with-octopress/"/>
+    <updated>2015-02-07T23:03:07+08:00</updated>
+    <id>http://forestrick.github.io/blog/2015/02/07/github-page-with-octopress</id>
+    <content type="html"><![CDATA[<h2>Installation</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone git://github.com/imathis/octopress.git
+</span><span class='line'>$ bundle install 
+</span><span class='line'>$ rake install 
+</span><span class='line'>$ rake preview </span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Setting up for github pages</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake setup_github_pages
+</span><span class='line'>$ rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Make a new post</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake new_post[title]</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Translate markdown to html file</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake generate</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Remove page</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rm -rf [pages] 
+</span><span class='line'>$ rake generate 
+</span><span class='line'>$ rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello-world]]></title>
+    <link href="http://forestrick.github.io/blog/2015/01/20/hello-world/"/>
+    <updated>2015-01-20T23:31:38+08:00</updated>
+    <id>http://forestrick.github.io/blog/2015/01/20/hello-world</id>
+    <content type="html"><![CDATA[<h1>Hello World</h1>
+
+<p>hello</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[This Is Post]]></title>
+    <link href="http://forestrick.github.io/blog/2011/06/01/this-is-a-test/"/>
+    <updated>2011-06-01T14:44:00+08:00</updated>
+    <id>http://forestrick.github.io/blog/2011/06/01/this-is-a-test</id>
+    <content type="html"><![CDATA[<p>Booyah!</p>
+]]></content>
+  </entry>
+  
+</feed>
