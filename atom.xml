@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://forestrick.github.io/atom.xml" rel="self"/>
   <link href="http://forestrick.github.io/"/>
-  <updated>2015-02-07T23:03:48+08:00</updated>
+  <updated>2015-02-07T23:09:16+08:00</updated>
   <id>http://forestrick.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -71,13 +71,7 @@
     <id>http://forestrick.github.io/blog/2015/01/20/hello-world</id>
     <content type="html"><![CDATA[<h1>Hello World</h1>
 
-<p><em>test1
-</em>test2</p>
-
-<h2>This is test</h2>
-
-<p>-test3
--test4</p>
+<p>hello</p>
 ]]></content>
   </entry>
   
