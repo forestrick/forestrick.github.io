@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Github | Forestrick]]></title>
   <link href="http://forestrick.github.io/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://forestrick.github.io/"/>
-  <updated>2015-02-08T22:22:27+08:00</updated>
+  <updated>2015-02-08T22:24:55+08:00</updated>
   <id>http://forestrick.github.io/</id>
   <author>
     <name><![CDATA[forestrick]]></name>
@@ -18,46 +18,35 @@
     <link href="http://forestrick.github.io/blog/2015/02/07/github-page-with-octopress/"/>
     <updated>2015-02-07T23:03:07+08:00</updated>
     <id>http://forestrick.github.io/blog/2015/02/07/github-page-with-octopress</id>
-    <content type="html"><![CDATA[<h1>Github setup</h1>
+    <content type="html"><![CDATA[<h2>Github setup</h2>
 
-<p>Go to your github page and create a repository<br>
-naming it to <strong>{username.github.io}</strong>
-<code>
-$ git clone https://github.com/{username}/{username}.github.io
-</code></p>
+<p>Go to your github page and create a repository</p>
+
+<p>naming it to <strong>{username.github.io}</strong></p>
+
+<pre><code>$ git clone https://github.com/{username}/{username}.github.io
+</code></pre>
 
 <!--more-->
 
 
-<p>Test it
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ echo &ldquo;Hello World&rdquo; &gt; index.html
-</span><span class='line'>$ git add —all
-</span><span class='line'>$ git commit -m &ldquo;Initial commit&rdquo;
-</span><span class='line'>$ git push&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;pre&gt;&lt;code&gt;---
-</span><span class='line'>
-</span><span class='line'>## Installation
-</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;$ git clone git://github.com/imathis/octopress.git
-</span><span class='line'>$ bundle install
-</span><span class='line'>$ rake install
-</span><span class='line'>$ rake preview</span></code></pre></td></tr></table></div></figure></p>
+<p>Test it</p>
+
+<pre><code>$ echo "Hello World" &gt; index.html
+$ git add —all
+$ git commit -m "Initial commit"
+$ git push
+</code></pre>
+
+<hr />
+
+<h2>Installation</h2>
+
+<pre><code>$ git clone git://github.com/imathis/octopress.git
+$ bundle install 
+$ rake install 
+$ rake preview 
+</code></pre>
 
 <!--more-->
 
