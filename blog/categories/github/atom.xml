@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Github | Forestrick]]></title>
   <link href="http://forestrick.github.io/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://forestrick.github.io/"/>
-  <updated>2015-02-09T00:14:26+08:00</updated>
+  <updated>2015-02-09T00:26:34+08:00</updated>
   <id>http://forestrick.github.io/</id>
   <author>
     <name><![CDATA[forestrick]]></name>
@@ -87,23 +87,33 @@ $ rake deploy
 
 <p>e.g.</p>
 
-<pre><code class="sh">## Installation
-$ git clone git://github.com/imathis/octopress.git
-$ bundle install 
-$ rake install 
-$ rake preview 
+<pre><code class="sh">## Github setup
+
+Go to your github page and create a repository
+
+naming it to **{username.github.io}**
 </code></pre>
 
-<hr />
+<p>$ git clone <a href="https://github.com/">https://github.com/</a>{username}/{username}.github.io
+&#8220;`</p>
 
-<h2>Install lucaslew/whitespace theme</h2>
+<!--more-->
 
-<pre><code class="sh">$ cd octopress
-$ git clone git://github.com/lucaslew/whitespace.git .themes/whitespace
-# for zsh, use: rake install\['whitespace'\]
-$ rake install['whitespace'] 
+
+<pre><code>
+---
+
+## Install lucaslew/whitespace theme
+</code></pre>
+
+<p>$ cd octopress
+$ git clone git://github.com/lucaslew/whitespace.git .themes/whitespace</p>
+
+<h1>for zsh, use: rake install[&lsquo;whitespace&rsquo;]</h1>
+
+<p>$ rake install[&lsquo;whitespace&rsquo;]
 $ rake generate
-</code></pre>
+&#8220;`</p>
 
 <hr />
 
