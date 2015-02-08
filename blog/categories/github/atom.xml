@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Github | Forestrick]]></title>
   <link href="http://forestrick.github.io/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://forestrick.github.io/"/>
-  <updated>2015-02-08T22:26:35+08:00</updated>
+  <updated>2015-02-08T22:27:37+08:00</updated>
   <id>http://forestrick.github.io/</id>
   <author>
     <name><![CDATA[forestrick]]></name>
@@ -20,8 +20,9 @@
     <id>http://forestrick.github.io/blog/2015/02/07/github-page-with-octopress</id>
     <content type="html"><![CDATA[<h2>Github setup</h2>
 
-<p>Go to your github page and create a repository
-naming it to <strong>{username.github.io}</strong></p>
+<p>Go to your github page and create a repository</p>
+
+<p>naming it to <strong>{username.github.io}</strong></p>
 
 <pre><code>$ git clone https://github.com/{username}/{username}.github.io
 </code></pre>
