@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Forestrick]]></title>
   <link href="http://forestrick.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://forestrick.github.io/"/>
-  <updated>2015-02-08T22:07:31+08:00</updated>
+  <updated>2015-02-08T22:14:53+08:00</updated>
   <id>http://forestrick.github.io/</id>
   <author>
     <name><![CDATA[forestrick]]></name>
@@ -87,8 +87,8 @@ $ rake deploy
 
 <h2>Read on Buttons in index page</h2>
 
-<p>Check your _config.yml and find <strong>excerpt_separator</strong><br>
-default value is: <strong>&lt;!&ndash;more&ndash;></strong><br>
+<p>Check your _config.yml and find <em>excerpt_separator</em> <br>
+default value is: <em>&lt;!&ndash;more&ndash;></em> <br>
 add <strong>&lt;!&ndash;more&ndash;></strong> to the paragraph that you want to show in index page
 <code>
 excerpt_separator: "&lt;!--more--&gt;"
@@ -118,8 +118,8 @@ $ rake generate</p>
 
 <h2>&#8220;`</h2>
 
-<p>References:
-<a href="https://pages.github.com/">Github Page</a>
+<p>References:<br>
+<a href="https://pages.github.com/">Github Page</a><br>
 <a href="http://octopress.org/docs/setup/">Octopress Setup</a><br>
 <a href="https://github.com/lucaslew/whitespace">lucaslew/whitespace github page</a><br></p>
 ]]></content>

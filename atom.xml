@@ -4,7 +4,7 @@
   <title><![CDATA[Forestrick]]></title>
   <link href="http://forestrick.github.io/atom.xml" rel="self"/>
   <link href="http://forestrick.github.io/"/>
-  <updated>2015-02-08T22:07:31+08:00</updated>
+  <updated>2015-02-08T22:14:53+08:00</updated>
   <id>http://forestrick.github.io/</id>
   <author>
     <name><![CDATA[forestrick]]></name>
@@ -91,8 +91,8 @@ naming it to <strong>{username.github.io}</strong></p>
 
 <h2>Read on Buttons in index page</h2>
 
-<p>Check your _config.yml and find <strong>excerpt_separator</strong><br>
-default value is: <strong>&lt;!&ndash;more&ndash;></strong><br>
+<p>Check your _config.yml and find <em>excerpt_separator</em> <br>
+default value is: <em>&lt;!&ndash;more&ndash;></em> <br>
 add <strong>&lt;!&ndash;more&ndash;></strong> to the paragraph that you want to show in index page</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -131,8 +131,8 @@ add <strong>&lt;!&ndash;more&ndash;></strong> to the paragraph that you want to 
 
 <hr />
 
-<p>References:
-<a href="https://pages.github.com/">Github Page</a>
+<p>References:<br>
+<a href="https://pages.github.com/">Github Page</a><br>
 <a href="http://octopress.org/docs/setup/">Octopress Setup</a><br>
 <a href="https://github.com/lucaslew/whitespace">lucaslew/whitespace github page</a><br></p>
 ]]></content>
@@ -148,6 +148,50 @@ add <strong>&lt;!&ndash;more&ndash;></strong> to the paragraph that you want to 
 <p>hello</p>
 
 <!--more-->
+
+
+<h1>h1</h1>
+
+<h2>h2</h2>
+
+<h3>h3</h3>
+
+<h5>h4</h5>
+
+<h6>h5</h6>
+
+<h6># h6</h6>
+
+<p><em>single</em>
+<strong>double</strong>
+<strong><em>triple</em></strong></p>
+
+<p>horizontal line</p>
+
+<h1>equal sign </h1>
+
+<h2>dash</h2>
+
+<hr />
+
+<blockquote><p>quotation</p>
+
+<blockquote><p>quotation2</p></blockquote></blockquote>
+
+<p>unordered list
+* item1
+* itme2
+* item3</p>
+
+<p>ordered list
+1. a
+2. b
+3. c</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'> code here</span></code></pre></td></tr></table></div></figure>
+
+
 
 ]]></content>
   </entry>
