@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Forestrick]]></title>
   <link href="http://forestrick.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://forestrick.github.io/"/>
-  <updated>2015-02-08T22:06:09+08:00</updated>
+  <updated>2015-02-08T22:07:31+08:00</updated>
   <id>http://forestrick.github.io/</id>
   <author>
     <name><![CDATA[forestrick]]></name>
@@ -120,8 +120,8 @@ $ rake generate</p>
 
 <p>References:
 <a href="https://pages.github.com/">Github Page</a>
-<a href="http://octopress.org/docs/setup/">Octopress Setup</a>
-<a href="https://github.com/lucaslew/whitespace">lucaslew/whitespace github page</a></p>
+<a href="http://octopress.org/docs/setup/">Octopress Setup</a><br>
+<a href="https://github.com/lucaslew/whitespace">lucaslew/whitespace github page</a><br></p>
 ]]></content>
   </entry>
   
