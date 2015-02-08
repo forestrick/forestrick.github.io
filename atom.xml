@@ -4,7 +4,7 @@
   <title><![CDATA[Forestrick]]></title>
   <link href="http://forestrick.github.io/atom.xml" rel="self"/>
   <link href="http://forestrick.github.io/"/>
-  <updated>2015-02-08T21:58:08+08:00</updated>
+  <updated>2015-02-08T22:02:11+08:00</updated>
   <id>http://forestrick.github.io/</id>
   <author>
     <name><![CDATA[forestrick]]></name>
@@ -14,17 +14,20 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Github-Page-With-Octopress]]></title>
+    <title type="html"><![CDATA[Github Page With Octopress]]></title>
     <link href="http://forestrick.github.io/blog/2015/02/07/github-page-with-octopress/"/>
     <updated>2015-02-07T23:03:07+08:00</updated>
     <id>http://forestrick.github.io/blog/2015/02/07/github-page-with-octopress</id>
     <content type="html"><![CDATA[<h2>Github setup</h2>
 
-<p>Go to your github page and create a repository
+<p>Go to your github page and create a repository<br>
 naming it to <strong>{username.github.io}</strong></p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone https://github.com/{username}/{username}.github.io</span></code></pre></td></tr></table></div></figure>
+
+
+<!--more-->
 
 
 <p>Test it</p>
@@ -89,8 +92,8 @@ naming it to <strong>{username.github.io}</strong></p>
 <h2>Read on Buttons in index page</h2>
 
 <p>Check your _config.yml and find <strong>excerpt_separator</strong><br>
-default value is: <strong>&lt;!&ndash;more&ndash;></strong>
-add <strong>&lt;!&ndash;more&ndash;></strong> to the paragraph that your want show in index page</p>
+default value is: <strong>&lt;!&ndash;more&ndash;></strong><br>
+add <strong>&lt;!&ndash;more&ndash;></strong> to the paragraph that you want to show in index page</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>excerpt_separator: "&lt;!--more--&gt;"</span></code></pre></td></tr></table></div></figure>
@@ -103,13 +106,11 @@ add <strong>&lt;!&ndash;more&ndash;></strong> to the paragraph that your want sh
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-<span class='line-number'>6</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>## Installation
 </span><span class='line'>$ git clone git://github.com/imathis/octopress.git
 </span><span class='line'>$ bundle install 
 </span><span class='line'>$ rake install 
-</span><span class='line'>$ rake preview 
-</span><span class='line'>&lt;!--more--&gt;</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>$ rake preview </span></code></pre></td></tr></table></div></figure>
 
 
 <hr />
