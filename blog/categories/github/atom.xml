@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Github | Forestrick]]></title>
   <link href="http://forestrick.github.io/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://forestrick.github.io/"/>
-  <updated>2015-02-08T22:19:34+08:00</updated>
+  <updated>2015-02-08T22:22:27+08:00</updated>
   <id>http://forestrick.github.io/</id>
   <author>
     <name><![CDATA[forestrick]]></name>
@@ -87,41 +87,44 @@ $ rake deploy
 
 <h2>Read on Buttons in index page</h2>
 
-<p>Check your _config.yml and find <em>excerpt_separator</em> <br>
-default value is: <em>&lt;!&ndash;more&ndash;></em> <br>
-add <strong>&lt;!&ndash;more&ndash;></strong> to the paragraph that you want to show in index page
-<code>
-excerpt_separator: "&lt;!--more--&gt;"
-</code></p>
+<p>Check your _config.yml and find <strong>excerpt_separator</strong></p>
 
-<p>e.g.
-&#8220;`</p>
+<p>default value is: <strong>&lt;!&ndash;more&ndash;></strong></p>
 
-<h2>Installation</h2>
+<p>add <strong>&lt;!&ndash;more&ndash;></strong> to the paragraph that you want to show in index page</p>
 
-<p>$ git clone git://github.com/imathis/octopress.git
-$ bundle install
-$ rake install
-$ rake preview</p>
-
-<pre><code>---
-## Install lucaslew/whitespace theme
+<pre><code>excerpt_separator: "&lt;!--more--&gt;"
 </code></pre>
 
-<p>$ cd octopress
-$ git clone git://github.com/lucaslew/whitespace.git .themes/whitespace</p>
+<p>e.g.</p>
 
-<h1>for zsh, use: rake install[&lsquo;whitespace&rsquo;]</h1>
+<pre><code>## Installation
+$ git clone git://github.com/imathis/octopress.git
+$ bundle install 
+$ rake install 
+$ rake preview 
+</code></pre>
 
-<p>$ rake install[&lsquo;whitespace&rsquo;]
-$ rake generate</p>
+<hr />
 
-<h2>&#8220;`</h2>
+<h2>Install lucaslew/whitespace theme</h2>
 
-<p>References:<br>
-<a href="https://pages.github.com/">Github Page</a><br>
-<a href="http://octopress.org/docs/setup/">Octopress Setup</a><br>
-<a href="https://github.com/lucaslew/whitespace">lucaslew/whitespace github page</a><br></p>
+<pre><code>$ cd octopress
+$ git clone git://github.com/lucaslew/whitespace.git .themes/whitespace
+# for zsh, use: rake install\['whitespace'\]
+$ rake install['whitespace'] 
+$ rake generate
+</code></pre>
+
+<hr />
+
+<p>References:</p>
+
+<p><a href="https://pages.github.com/">Github Page</a></p>
+
+<p><a href="http://octopress.org/docs/setup/">Octopress Setup</a></p>
+
+<p><a href="https://github.com/lucaslew/whitespace">lucaslew/whitespace github page</a></p>
 ]]></content>
   </entry>
   
