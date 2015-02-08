@@ -4,7 +4,7 @@
   <title><![CDATA[Forestrick]]></title>
   <link href="http://forestrick.github.io/atom.xml" rel="self"/>
   <link href="http://forestrick.github.io/"/>
-  <updated>2015-02-09T00:05:40+08:00</updated>
+  <updated>2015-02-09T00:08:01+08:00</updated>
   <id>http://forestrick.github.io/</id>
   <author>
     <name><![CDATA[forestrick]]></name>
@@ -176,11 +176,14 @@
 
 <p><strong><em>triple</em></strong></p>
 
-<p>horizontal line</p>
+<p>horizontal line
+equal sign</p>
 
-<h1>equal sign </h1>
+<hr />
 
-<h2>dash</h2>
+<p>dash</p>
+
+<hr />
 
 <blockquote><p>quotation</p>
 
