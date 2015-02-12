@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Perl | Forestrick]]></title>
+  <link href="http://forestrick.github.io/blog/categories/perl/atom.xml" rel="self"/>
+  <link href="http://forestrick.github.io/"/>
+  <updated>2015-02-12T21:50:31+08:00</updated>
+  <id>http://forestrick.github.io/</id>
+  <author>
+    <name><![CDATA[forestrick]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Perl Conventions]]></title>
+    <link href="http://forestrick.github.io/blog/2015/02/12/perl-convention/"/>
+    <updated>2015-02-12T21:46:23+08:00</updated>
+    <id>http://forestrick.github.io/blog/2015/02/12/perl-convention</id>
+    <content type="html"><![CDATA[<h1>Perl Conventions </h1>
+
+<p>Always use <strong>-w flags</strong> , <strong>use strict</strong>, even helpful&hellip; <strong>use sigtrap</strong>, <strong>use diagnostics</strong></p>
+
+<h2>Code format</h2>
+
+<ol>
+<li>4-column indent.</li>
+<li>Opening curly on same line as keyword, if possible, otherwise line up.</li>
+<li>Space before the opening curly of a multi-line BLOCK.</li>
+<li>One-line BLOCK may be put on one line, including curlies.</li>
+<li>No space before the semicolon.</li>
+<li>Semicolon omitted in &ldquo;short&rdquo; one-line BLOCK.</li>
+<li>Space around most operators.</li>
+<li>Space around a &ldquo;complex&rdquo; subscript (inside brackets).</li>
+<li>Blank lines between chunks that do different things.</li>
+<li>Uncuddled elses.</li>
+<li>No space between function name and its opening parenthesis.</li>
+<li>Space after each comma.</li>
+<li>Long lines broken after an operator (except and and or ).</li>
+<li>Space after last parenthesis matching on current line.</li>
+<li>Line up corresponding items vertically.</li>
+<li>Omit redundant punctuation as long as clarity doesn&rsquo;t suffer.</li>
+</ol>
+
+
+<hr />
+
+<p>Just because you CAN do something a particular way doesn&rsquo;t mean that you SHOULD do it that way.</p>
+
+<p>Try to make it easier to read at a glance</p>
+
+<hr />
+
+<p>Make it obviously to understand main point of expressions,
+<code>perl
+open(FOO,$foo) || die "Can't open $foo: $!";
+is better than
+die "Can't open $foo: $!" unless open(FOO,$foo);
+</code>
+&#8220;` perl
+ print &ldquo;Starting analysis\n&rdquo; if $verbose;
+is better than
+ $verbose &amp;&amp; print &ldquo;Starting analysis\n&rdquo;;</p>
+
+<pre><code>---
+Just because you CAN omit parentheses in many places doesn't mean that you ought to
+</code></pre>
+
+<pre><code>return print reverse sort num values %array;
+return print(reverse(sort num (values(%array))));
+</code></pre>
+
+<pre><code>When in doubt, parenthesize.
+
+---
+
+Perl provides the last operator so you can exit in the middle. Just "outdent" it a little to make it more visible:
+</code></pre>
+
+<p>LINE:
+for (;;) {
+    statements;
+  last LINE if $foo;
+    next LINE if /^#/;
+    statements;
+}</p>
+
+<pre><code>---
+
+Avoid using `grep()` (or `map()`) or `backticks` in a void context, that is, when you just throw away their return values. Those functions all have return values, so use them. Otherwise use a `foreach()` loop or the `system()` function instead.
+
+For portability, when using features that may not be implemented on every machine, test the construct in an eval to see if it fails
+
+Choose mnemonic identifiers.
+
+While short identifiers like `$gotit` are probably ok, use underscores to separate words in longer identifiers. It is generally easier to read `$var_names_like_this` than `$VarNamesLikeThis`
+
+Perl informally reserves lowercase module names for "pragma" modules like integer and strict 
+</code></pre>
+
+<p> $ALL_CAPS_HERE   constants only (beware clashes with perl vars!)
+ $Some_Caps_Here  package-wide global/static
+ $no_caps_here    function scope my() or local() variables
+<code>``
+Function and method names seem to work best as all lowercase.
+E.g.,</code>$obj->as_string()`.</p>
+
+<p>You can use a leading underscore to indicate that a variable or function should not be used outside the package that defined it.</p>
+
+<p>If you have a really hairy regular expression, use the <code>/x</code> modifier and put in some whitespace to make it look a little less like line noise. Don&rsquo;t use slash as a delimiter when your regexp has slashes or backslashes.</p>
+
+<p>Use the new <code>and</code> and <code>or</code> operators to avoid having to parenthesize list operators so much, and to reduce the incidence of punctuation operators like <code>&amp;&amp;</code> and <code>||</code>.</p>
+
+<p>Use here documents instead of repeated <code>print()</code> statements</p>
+
+<hr />
+
+<p>Line up corresponding things vertically, especially if it&rsquo;d be too long to fit on one line anyway.</p>
+
+<pre><code class="perl">$IDX = $ST_MTIME;
+$IDX = $ST_ATIME    if $opt_u;
+$IDX = $ST_CTIME    if $opt_c;
+$IDX = $ST_SIZE     if $opt_s;
+mkdir $tmpdir, 0700 or die "can't mkdir $tmpdir: $!";
+chdir($tmpdir)      or die "can't chdir $tmpdir: $!";
+mkdir 'tmp',   0777 or die "can't mkdir $tmpdir/tmp: $!";
+</code></pre>
+
+<hr />
+
+<p>Always check the return codes of system calls. Good error messages should go to STDERR ,</p>
+
+<p>Think about reusability.</p>
+
+<p>Try to document your code and use Pod formatting in a consistent way.</p>
+
+<p>use C&lt;> for function, variable and module names
+use B&lt;> for commands names like cat or grep.
+use F&lt;> or C&lt;> for file names. F&lt;> should be the only Pod code for file names</p>
+
+<hr />
+
+<p>Be consistent.
+Be nice.</p>
+]]></content>
+  </entry>
+  
+</feed>

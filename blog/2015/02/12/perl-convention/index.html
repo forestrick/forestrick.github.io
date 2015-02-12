@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Github Page With Octopress - Forestrick</title>
+  <title>Perl Conventions - Forestrick</title>
   <meta name="author" content="forestrick">
 
   
-  <meta name="description" content="Github setup Go to your github page and create a repository naming it to {username.github.io} 1
-$ git clone https://github.com/{username}/{username}. &hellip;">
+  <meta name="description" content="Perl Conventions Always use -w flags , use strict, even helpful&hellip; use sigtrap, use diagnostics Code format 4-column indent.
+Opening curly on &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ $ git clone https://github.com/{username}/{username}. &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://forestrick.github.io/blog/2015/02/07/github-page-with-octopress">
+  <link rel="canonical" href="http://forestrick.github.io/blog/2015/02/12/perl-convention">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Forestrick" type="application/atom+xml">
@@ -102,7 +102,7 @@ $ git clone https://github.com/{username}/{username}. &hellip;">
   <header>
     
       
-        <h1 class="entry-title">Github Page With Octopress</h1>
+        <h1 class="entry-title">Perl Conventions</h1>
       
     
     
@@ -112,7 +112,7 @@ $ git clone https://github.com/{username}/{username}. &hellip;">
 
 
 
-<time class='entry-date' datetime='2015-02-07T23:03:07+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>11:03 pm</span></time>
+<time class='entry-date' datetime='2015-02-12T21:46:23+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>9:46 pm</span></time>
         
         
       </p>
@@ -120,101 +120,76 @@ $ git clone https://github.com/{username}/{username}. &hellip;">
   </header>
 
 
-<div class="entry-content"><h2>Github setup</h2>
+<div class="entry-content"><h1>Perl Conventions </h1>
 
-<p>Go to your github page and create a repository</p>
+<p>Always use <strong>-w flags</strong> , <strong>use strict</strong>, even helpful&hellip; <strong>use sigtrap</strong>, <strong>use diagnostics</strong></p>
 
-<p>naming it to <strong>{username.github.io}</strong></p>
+<h2>Code format</h2>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>git clone https://github.com/<span class="o">{</span>username<span class="o">}</span>/<span class="o">{</span>username<span class="o">}</span>.github.io
-</span></code></pre></td></tr></table></div></figure>
+<ol>
+<li>4-column indent.</li>
+<li>Opening curly on same line as keyword, if possible, otherwise line up.</li>
+<li>Space before the opening curly of a multi-line BLOCK.</li>
+<li>One-line BLOCK may be put on one line, including curlies.</li>
+<li>No space before the semicolon.</li>
+<li>Semicolon omitted in &ldquo;short&rdquo; one-line BLOCK.</li>
+<li>Space around most operators.</li>
+<li>Space around a &ldquo;complex&rdquo; subscript (inside brackets).</li>
+<li>Blank lines between chunks that do different things.</li>
+<li>Uncuddled elses.</li>
+<li>No space between function name and its opening parenthesis.</li>
+<li>Space after each comma.</li>
+<li>Long lines broken after an operator (except and and or ).</li>
+<li>Space after last parenthesis matching on current line.</li>
+<li>Line up corresponding items vertically.</li>
+<li>Omit redundant punctuation as long as clarity doesn&rsquo;t suffer.</li>
+</ol>
 
 
-<!--more-->
+<hr />
 
+<p>Just because you CAN do something a particular way doesn&rsquo;t mean that you SHOULD do it that way.</p>
 
-<p>Test it</p>
+<p>Try to make it easier to read at a glance</p>
+
+<hr />
+
+<p>Make it obviously to understand main point of expressions,</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span><span class="nb">echo</span> <span class="s2">&quot;Hello World&quot;</span> &gt; index.html
-</span><span class='line'><span class="nv">$ </span>git add —all
-</span><span class='line'><span class="nv">$ </span>git commit -m <span class="s2">&quot;Initial commit&quot;</span>
-</span><span class='line'><span class="nv">$ </span>git push
+</pre></td><td class='code'><pre><code class='perl'><span class='line'><span class="nb">open</span><span class="p">(</span><span class="n">FOO</span><span class="p">,</span><span class="nv">$foo</span><span class="p">)</span> <span class="o">||</span> <span class="nb">die</span> <span class="s">&quot;Can&#39;t open $foo: $!&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">is</span> <span class="n">better</span> <span class="n">than</span>
+</span><span class='line'><span class="nb">die</span> <span class="s">&quot;Can&#39;t open $foo: $!&quot;</span> <span class="k">unless</span> <span class="nb">open</span><span class="p">(</span><span class="n">FOO</span><span class="p">,</span><span class="nv">$foo</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='perl'><span class='line'> <span class="k">print</span> <span class="s">&quot;Starting analysis\n&quot;</span> <span class="k">if</span> <span class="nv">$verbose</span><span class="p">;</span>
+</span><span class='line'><span class="n">is</span> <span class="n">better</span> <span class="n">than</span>
+</span><span class='line'> <span class="nv">$verbose</span> <span class="o">&amp;&amp;</span> <span class="k">print</span> <span class="s">&quot;Starting analysis\n&quot;</span><span class="p">;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
 <hr />
 
-<h2>Installation</h2>
+<p>Just because you CAN omit parentheses in many places doesn&rsquo;t mean that you ought to</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>git clone git://github.com/imathis/octopress.git
-</span><span class='line'><span class="nv">$ </span>bundle install
-</span><span class='line'><span class="nv">$ </span>rake install
-</span><span class='line'><span class="nv">$ </span>rake preview
+</pre></td><td class='code'><pre><code class='perl'><span class='line'><span class="k">return</span> <span class="k">print</span> <span class="nb">reverse</span> <span class="nb">sort</span> <span class="n">num</span> <span class="nb">values</span> <span class="nv">%array</span><span class="p">;</span>
+</span><span class='line'><span class="k">return</span> <span class="k">print</span><span class="p">(</span><span class="nb">reverse</span><span class="p">(</span><span class="nb">sort</span> <span class="n">num</span> <span class="p">(</span><span class="nb">values</span><span class="p">(</span><span class="nv">%array</span><span class="p">))));</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>When in doubt, parenthesize.</p>
 
+<hr />
 
-<!--more-->
-
-
-<h2>Setting up for github pages</h2>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>rake setup_github_pages
-</span><span class='line'><span class="nv">$ </span>rake deploy
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Make a new post</h2>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>rake new_post<span class="o">[</span>title<span class="o">]</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Translate markdown to html file</h2>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>rake generate
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Remove page</h2>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>rm -rf <span class="o">[</span>pages<span class="o">]</span>
-</span><span class='line'><span class="nv">$ </span>rake generate
-</span><span class='line'><span class="nv">$ </span>rake deploy
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Read on Buttons in index page</h2>
-
-<p>Check your <em>_config.yml</em> and find <strong>excerpt_separator</strong></p>
-
-<p>default value is: <strong>&lt;!&ndash;more&ndash;></strong></p>
-
-<p>add <strong>&lt;!&ndash;more&ndash;></strong> to the paragraph that you want to show in index page</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>excerpt_separator: <span class="s2">&quot;&lt;!--more--&gt;&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>e.g.</p>
+<p>Perl provides the last operator so you can exit in the middle. Just &ldquo;outdent&rdquo; it a little to make it more visible:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -223,48 +198,85 @@ $ git clone https://github.com/{username}/{username}. &hellip;">
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c">## Github setup</span>
-</span><span class='line'>
-</span><span class='line'>Go to your github page and create a repository
-</span><span class='line'>
-</span><span class='line'>naming it to **<span class="o">{</span>username.github.io<span class="o">}</span>**
-</span><span class='line'>
-</span><span class='line'>   <span class="sb">```</span> sh
-</span><span class='line'>   <span class="nv">$ </span>git clone https://github.com/<span class="o">{</span>username<span class="o">}</span>/<span class="o">{</span>username<span class="o">}</span>.github.io
-</span><span class='line'>   <span class="sb">```</span>
-</span><span class='line'>&lt;!--more--&gt;
+</pre></td><td class='code'><pre><code class='perl'><span class='line'><span class="n">LINE:</span>
+</span><span class='line'><span class="k">for</span> <span class="p">(;;)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">statements</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">last</span> <span class="n">LINE</span> <span class="k">if</span> <span class="nv">$foo</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">next</span> <span class="n">LINE</span> <span class="k">if</span> <span class="sr">/^#/</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">statements</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
 <hr />
 
-<h2>Install lucaslew/whitespace theme</h2>
+<p>Avoid using <code>grep()</code> (or <code>map()</code>) or <code>backticks</code> in a void context, that is, when you just throw away their return values. Those functions all have return values, so use them. Otherwise use a <code>foreach()</code> loop or the <code>system()</code> function instead.</p>
+
+<p>For portability, when using features that may not be implemented on every machine, test the construct in an eval to see if it fails</p>
+
+<p>Choose mnemonic identifiers.</p>
+
+<p>While short identifiers like <code>$gotit</code> are probably ok, use underscores to separate words in longer identifiers. It is generally easier to read <code>$var_names_like_this</code> than <code>$VarNamesLikeThis</code></p>
+
+<p>Perl informally reserves lowercase module names for &ldquo;pragma&rdquo; modules like integer and strict</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='perl'><span class='line'> <span class="nv">$ALL_CAPS_HERE</span>   <span class="n">constants</span> <span class="n">only</span> <span class="p">(</span><span class="n">beware</span> <span class="n">clashes</span> <span class="n">with</span> <span class="n">perl</span> <span class="n">vars</span><span class="o">!</span><span class="p">)</span>
+</span><span class='line'> <span class="nv">$Some_Caps_Here</span>  <span class="nb">package</span><span class="o">-</span><span class="n">wide</span> <span class="n">global</span><span class="o">/</span><span class="n">static</span>
+</span><span class='line'> <span class="nv">$no_caps_here</span>    <span class="n">function</span> <span class="n">scope</span> <span class="k">my</span><span class="p">()</span> <span class="ow">or</span> <span class="nb">local</span><span class="p">()</span> <span class="n">variables</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Function and method names seem to work best as all lowercase.
+E.g., <code>$obj-&gt;as_string()</code>.</p>
+
+<p>You can use a leading underscore to indicate that a variable or function should not be used outside the package that defined it.</p>
+
+<p>If you have a really hairy regular expression, use the <code>/x</code> modifier and put in some whitespace to make it look a little less like line noise. Don&rsquo;t use slash as a delimiter when your regexp has slashes or backslashes.</p>
+
+<p>Use the new <code>and</code> and <code>or</code> operators to avoid having to parenthesize list operators so much, and to reduce the incidence of punctuation operators like <code>&amp;&amp;</code> and <code>||</code>.</p>
+
+<p>Use here documents instead of repeated <code>print()</code> statements</p>
+
+<hr />
+
+<p>Line up corresponding things vertically, especially if it&rsquo;d be too long to fit on one line anyway.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span><span class="nb">cd </span>octopress
-</span><span class='line'><span class="nv">$ </span>git clone git://github.com/lucaslew/whitespace.git .themes/whitespace
-</span><span class='line'><span class="c"># for zsh, use: rake install\[&#39;whitespace&#39;\]</span>
-</span><span class='line'><span class="nv">$ </span>rake install<span class="o">[</span><span class="s1">&#39;whitespace&#39;</span><span class="o">]</span>
-</span><span class='line'><span class="nv">$ </span>rake generate
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='perl'><span class='line'><span class="nv">$IDX</span> <span class="o">=</span> <span class="nv">$ST_MTIME</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$IDX</span> <span class="o">=</span> <span class="nv">$ST_ATIME</span>    <span class="k">if</span> <span class="nv">$opt_u</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$IDX</span> <span class="o">=</span> <span class="nv">$ST_CTIME</span>    <span class="k">if</span> <span class="nv">$opt_c</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$IDX</span> <span class="o">=</span> <span class="nv">$ST_SIZE</span>     <span class="k">if</span> <span class="nv">$opt_s</span><span class="p">;</span>
+</span><span class='line'><span class="nb">mkdir</span> <span class="nv">$tmpdir</span><span class="p">,</span> <span class="mo">0700</span> <span class="ow">or</span> <span class="nb">die</span> <span class="s">&quot;can&#39;t mkdir $tmpdir: $!&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="nb">chdir</span><span class="p">(</span><span class="nv">$tmpdir</span><span class="p">)</span>      <span class="ow">or</span> <span class="nb">die</span> <span class="s">&quot;can&#39;t chdir $tmpdir: $!&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="nb">mkdir</span> <span class="s">&#39;tmp&#39;</span><span class="p">,</span>   <span class="mo">0777</span> <span class="ow">or</span> <span class="nb">die</span> <span class="s">&quot;can&#39;t mkdir $tmpdir/tmp: $!&quot;</span><span class="p">;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
 <hr />
 
-<p>References:</p>
+<p>Always check the return codes of system calls. Good error messages should go to STDERR ,</p>
 
-<p><a href="https://pages.github.com/">Github Page</a></p>
+<p>Think about reusability.</p>
 
-<p><a href="http://octopress.org/docs/setup/">Octopress Setup</a></p>
+<p>Try to document your code and use Pod formatting in a consistent way.</p>
 
-<p><a href="https://github.com/lucaslew/whitespace">lucaslew/whitespace github page</a></p>
+<p>use C&lt;> for function, variable and module names
+use B&lt;> for commands names like cat or grep.
+use F&lt;> or C&lt;> for file names. F&lt;> should be the only Pod code for file names</p>
+
+<hr />
+
+<p>Be consistent.
+Be nice.</p>
 </div>
 
 
@@ -287,13 +299,13 @@ $ git clone https://github.com/{username}/{username}. &hellip;">
 
 
 
-<time class='entry-date' datetime='2015-02-07T23:03:07+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>11:03 pm</span></time>
+<time class='entry-date' datetime='2015-02-12T21:46:23+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>9:46 pm</span></time>
       
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/github/'>github</a>, <a class='category' href='/blog/categories/octopress/'>octopress</a>
+    <a class='category' href='/blog/categories/conventions/'>conventions</a>, <a class='category' href='/blog/categories/language/'>language</a>, <a class='category' href='/blog/categories/perl/'>perl</a>
   
 </span>
 
@@ -302,7 +314,7 @@ $ git clone https://github.com/{username}/{username}. &hellip;">
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://forestrick.github.io/blog/2015/02/07/github-page-with-octopress/" data-via="forestrick819" data-counturl="http://forestrick.github.io/blog/2015/02/07/github-page-with-octopress/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://forestrick.github.io/blog/2015/02/12/perl-convention/" data-via="forestrick819" data-counturl="http://forestrick.github.io/blog/2015/02/12/perl-convention/" >Tweet</a>
   
   
   
@@ -311,10 +323,8 @@ $ git clone https://github.com/{username}/{username}. &hellip;">
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2015/01/20/hello-world/" title="Previous Post: hello-world">&laquo; hello-world</a>
+        <a class="basic-alignment left" href="/blog/2015/02/07/github-page-with-octopress/" title="Previous Post: Github Page With Octopress">&laquo; Github Page With Octopress</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2015/02/12/perl-convention/" title="Next Post: Perl Conventions">Perl Conventions &raquo;</a>
       
     </p>
   </footer>
@@ -344,8 +354,8 @@ $ git clone https://github.com/{username}/{username}. &hellip;">
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://forestrick.github.io/blog/2015/02/07/github-page-with-octopress/';
-        var disqus_url = 'http://forestrick.github.io/blog/2015/02/07/github-page-with-octopress/';
+        var disqus_identifier = 'http://forestrick.github.io/blog/2015/02/12/perl-convention/';
+        var disqus_url = 'http://forestrick.github.io/blog/2015/02/12/perl-convention/';
         var disqus_script = 'embed.js';
       
     (function () {
