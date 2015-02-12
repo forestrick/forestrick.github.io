@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Conventions | Forestrick]]></title>
   <link href="http://forestrick.github.io/blog/categories/conventions/atom.xml" rel="self"/>
   <link href="http://forestrick.github.io/"/>
-  <updated>2015-02-12T21:50:31+08:00</updated>
+  <updated>2015-02-12T21:54:22+08:00</updated>
   <id>http://forestrick.github.io/</id>
   <author>
     <name><![CDATA[forestrick]]></name>
@@ -58,53 +58,100 @@ open(FOO,$foo) || die "Can't open $foo: $!";
 is better than
 die "Can't open $foo: $!" unless open(FOO,$foo);
 </code>
-&#8220;` perl
- print &ldquo;Starting analysis\n&rdquo; if $verbose;
-is better than
- $verbose &amp;&amp; print &ldquo;Starting analysis\n&rdquo;;</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+</pre></td><td class='code'><pre><code class='perl'><span class='line'> <span class="k">print</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">Starting</span> <span class="n">analysis</span><span class="o">\</span><span class="n">n</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span> <span class="k">if</span> <span class="nv">$verbose</span><span class="p">;</span>
+</span><span class='line'><span class="n">is</span> <span class="n">better</span> <span class="n">than</span>
+</span><span class='line'> <span class="nv">$verbose</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span> <span class="k">print</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">Starting</span> <span class="n">analysis</span><span class="o">\</span><span class="n">n</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;;</span><span class="sr">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;</span><span class="o">---</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">Just</span> <span class="n">because</span> <span class="n">you</span> <span class="n">CAN</span> <span class="n">omit</span> <span class="n">parentheses</span> <span class="n">in</span> <span class="n">many</span> <span class="n">places</span> <span class="n">doesn</span><span class="err">&#39;</span><span class="n">t</span> <span class="n">mean</span> <span class="n">that</span> <span class="n">you</span> <span class="n">ought</span> <span class="n">to</span>
+</span><span class='line'><span class="sr">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;</span><span class="k">return</span> <span class="k">print</span> <span class="nb">reverse</span> <span class="nb">sort</span> <span class="n">num</span> <span class="nb">values</span> <span class="nv">%array</span><span class="p">;</span>
+</span><span class='line'><span class="k">return</span> <span class="k">print</span><span class="p">(</span><span class="nb">reverse</span><span class="p">(</span><span class="nb">sort</span> <span class="n">num</span> <span class="p">(</span><span class="nb">values</span><span class="p">(</span><span class="nv">%array</span><span class="p">))));</span>
+</span><span class='line'><span class="sr">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;</span>
+</span><span class='line'><span class="n">When</span> <span class="n">in</span> <span class="n">doubt</span><span class="p">,</span> <span class="n">parenthesize</span><span class="o">.</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">---</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">Perl</span> <span class="n">provides</span> <span class="n">the</span> <span class="k">last</span> <span class="n">operator</span> <span class="n">so</span> <span class="n">you</span> <span class="n">can</span> <span class="nb">exit</span> <span class="n">in</span> <span class="n">the</span> <span class="n">middle</span><span class="o">.</span> <span class="n">Just</span> <span class="s">&quot;outdent&quot;</span> <span class="n">it</span> <span class="n">a</span> <span class="n">little</span> <span class="n">to</span> <span class="n">make</span> <span class="n">it</span> <span class="n">more</span> <span class="n">visible:</span>
+</span><span class='line'><span class="sr">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;</span><span class="n">LINE:</span>
+</span><span class='line'><span class="k">for</span> <span class="p">(;;)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">statements</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">last</span> <span class="n">LINE</span> <span class="k">if</span> <span class="nv">$foo</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">next</span> <span class="n">LINE</span> <span class="k">if</span> <span class="sr">/^#/</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">statements</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span><span class="sr">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;</span><span class="o">---</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">Avoid</span> <span class="n">using</span> <span class="sb">`grep()`</span> <span class="p">(</span><span class="ow">or</span> <span class="sb">`map()`</span><span class="p">)</span> <span class="ow">or</span> <span class="sb">`backticks`</span> <span class="n">in</span> <span class="n">a</span> <span class="n">void</span> <span class="n">context</span><span class="p">,</span> <span class="n">that</span> <span class="n">is</span><span class="p">,</span> <span class="n">when</span> <span class="n">you</span> <span class="n">just</span> <span class="n">throw</span> <span class="n">away</span> <span class="n">their</span> <span class="k">return</span> <span class="nb">values</span><span class="o">.</span> <span class="n">Those</span> <span class="n">functions</span> <span class="n">all</span> <span class="n">have</span> <span class="k">return</span> <span class="nb">values</span><span class="p">,</span> <span class="n">so</span> <span class="k">use</span> <span class="n">them</span><span class="o">.</span> <span class="n">Otherwise</span> <span class="k">use</span> <span class="n">a</span> <span class="sb">`foreach()`</span> <span class="n">loop</span> <span class="ow">or</span> <span class="n">the</span> <span class="sb">`system()`</span> <span class="n">function</span> <span class="n">instead</span><span class="o">.</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">For</span> <span class="n">portability</span><span class="p">,</span> <span class="n">when</span> <span class="n">using</span> <span class="n">features</span> <span class="n">that</span> <span class="n">may</span> <span class="ow">not</span> <span class="n">be</span> <span class="n">implemented</span> <span class="n">on</span> <span class="n">every</span> <span class="n">machine</span><span class="p">,</span> <span class="n">test</span> <span class="n">the</span> <span class="n">construct</span> <span class="n">in</span> <span class="n">an</span> <span class="nb">eval</span> <span class="n">to</span> <span class="n">see</span> <span class="k">if</span> <span class="n">it</span> <span class="n">fails</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">Choose</span> <span class="n">mnemonic</span> <span class="n">identifiers</span><span class="o">.</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">While</span> <span class="n">short</span> <span class="n">identifiers</span> <span class="n">like</span> <span class="sb">`$gotit`</span> <span class="n">are</span> <span class="n">probably</span> <span class="n">ok</span><span class="p">,</span> <span class="k">use</span> <span class="n">underscores</span> <span class="n">to</span> <span class="n">separate</span> <span class="n">words</span> <span class="n">in</span> <span class="n">longer</span> <span class="n">identifiers</span><span class="o">.</span> <span class="n">It</span> <span class="n">is</span> <span class="n">generally</span> <span class="n">easier</span> <span class="n">to</span> <span class="nb">read</span> <span class="sb">`$var_names_like_this`</span> <span class="n">than</span> <span class="sb">`$VarNamesLikeThis`</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">Perl</span> <span class="n">informally</span> <span class="n">reserves</span> <span class="n">lowercase</span> <span class="n">module</span> <span class="n">names</span> <span class="k">for</span> <span class="s">&quot;pragma&quot;</span> <span class="n">modules</span> <span class="n">like</span> <span class="n">integer</span> <span class="ow">and</span> <span class="n">strict</span>
+</span><span class='line'><span class="sr">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;</span> <span class="nv">$ALL_CAPS_HERE</span>   <span class="n">constants</span> <span class="n">only</span> <span class="p">(</span><span class="n">beware</span> <span class="n">clashes</span> <span class="n">with</span> <span class="n">perl</span> <span class="n">vars</span><span class="o">!</span><span class="p">)</span>
+</span><span class='line'> <span class="nv">$Some_Caps_Here</span>  <span class="nb">package</span><span class="o">-</span><span class="n">wide</span> <span class="n">global</span><span class="o">/</span><span class="n">static</span>
+</span><span class='line'> <span class="nv">$no_caps_here</span>    <span class="n">function</span> <span class="n">scope</span> <span class="k">my</span><span class="p">()</span> <span class="ow">or</span> <span class="nb">local</span><span class="p">()</span> <span class="n">variables</span>
+</span></code></pre></td></tr></table></div></figure></p>
 
-<pre><code>---
-Just because you CAN omit parentheses in many places doesn't mean that you ought to
-</code></pre>
-
-<pre><code>return print reverse sort num values %array;
-return print(reverse(sort num (values(%array))));
-</code></pre>
-
-<pre><code>When in doubt, parenthesize.
-
----
-
-Perl provides the last operator so you can exit in the middle. Just "outdent" it a little to make it more visible:
-</code></pre>
-
-<p>LINE:
-for (;;) {
-    statements;
-  last LINE if $foo;
-    next LINE if /^#/;
-    statements;
-}</p>
-
-<pre><code>---
-
-Avoid using `grep()` (or `map()`) or `backticks` in a void context, that is, when you just throw away their return values. Those functions all have return values, so use them. Otherwise use a `foreach()` loop or the `system()` function instead.
-
-For portability, when using features that may not be implemented on every machine, test the construct in an eval to see if it fails
-
-Choose mnemonic identifiers.
-
-While short identifiers like `$gotit` are probably ok, use underscores to separate words in longer identifiers. It is generally easier to read `$var_names_like_this` than `$VarNamesLikeThis`
-
-Perl informally reserves lowercase module names for "pragma" modules like integer and strict 
-</code></pre>
-
-<p> $ALL_CAPS_HERE   constants only (beware clashes with perl vars!)
- $Some_Caps_Here  package-wide global/static
- $no_caps_here    function scope my() or local() variables
-<code>``
-Function and method names seem to work best as all lowercase.
-E.g.,</code>$obj->as_string()`.</p>
+<p>Function and method names seem to work best as all lowercase.
+E.g., <code>$obj-&gt;as_string()</code>.</p>
 
 <p>You can use a leading underscore to indicate that a variable or function should not be used outside the package that defined it.</p>
 
@@ -143,6 +190,12 @@ use F&lt;> or C&lt;> for file names. F&lt;> should be the only Pod code for file
 
 <p>Be consistent.
 Be nice.</p>
+
+<hr />
+
+<p>Reference:</p>
+
+<p><a href="http://perldoc.perl.org/perlstyle.html">Perl Style</a></p>
 ]]></content>
   </entry>
   

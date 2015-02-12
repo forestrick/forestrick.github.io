@@ -4,7 +4,7 @@
   <title><![CDATA[Forestrick]]></title>
   <link href="http://forestrick.github.io/atom.xml" rel="self"/>
   <link href="http://forestrick.github.io/"/>
-  <updated>2015-02-12T21:50:31+08:00</updated>
+  <updated>2015-02-12T21:54:22+08:00</updated>
   <id>http://forestrick.github.io/</id>
   <author>
     <name><![CDATA[forestrick]]></name>
@@ -175,6 +175,12 @@ use F&lt;> or C&lt;> for file names. F&lt;> should be the only Pod code for file
 
 <p>Be consistent.
 Be nice.</p>
+
+<hr />
+
+<p>Reference:</p>
+
+<p><a href="http://perldoc.perl.org/perlstyle.html">Perl Style</a></p>
 ]]></content>
   </entry>
   
