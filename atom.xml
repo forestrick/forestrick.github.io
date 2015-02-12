@@ -4,7 +4,7 @@
   <title><![CDATA[Forestrick]]></title>
   <link href="http://forestrick.github.io/atom.xml" rel="self"/>
   <link href="http://forestrick.github.io/"/>
-  <updated>2015-02-12T21:54:22+08:00</updated>
+  <updated>2015-02-12T21:57:35+08:00</updated>
   <id>http://forestrick.github.io/</id>
   <author>
     <name><![CDATA[forestrick]]></name>
@@ -18,9 +18,10 @@
     <link href="http://forestrick.github.io/blog/2015/02/12/perl-convention/"/>
     <updated>2015-02-12T21:46:23+08:00</updated>
     <id>http://forestrick.github.io/blog/2015/02/12/perl-convention</id>
-    <content type="html"><![CDATA[<h1>Perl Conventions </h1>
+    <content type="html"><![CDATA[<p>Always use <strong>-w flags</strong> , <strong>use strict</strong>, even helpful&hellip; <strong>use sigtrap</strong>, <strong>use diagnostics</strong></p>
 
-<p>Always use <strong>-w flags</strong> , <strong>use strict</strong>, even helpful&hellip; <strong>use sigtrap</strong>, <strong>use diagnostics</strong></p>
+<!--more-->
+
 
 <h2>Code format</h2>
 
@@ -61,6 +62,8 @@
 </span><span class='line'><span class="n">is</span> <span class="n">better</span> <span class="n">than</span>
 </span><span class='line'><span class="nb">die</span> <span class="s">&quot;Can&#39;t open $foo: $!&quot;</span> <span class="k">unless</span> <span class="nb">open</span><span class="p">(</span><span class="n">FOO</span><span class="p">,</span><span class="nv">$foo</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
+
+
 
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -167,9 +170,11 @@ E.g., <code>$obj-&gt;as_string()</code>.</p>
 
 <p>Try to document your code and use Pod formatting in a consistent way.</p>
 
-<p>use C&lt;> for function, variable and module names
-use B&lt;> for commands names like cat or grep.
-use F&lt;> or C&lt;> for file names. F&lt;> should be the only Pod code for file names</p>
+<p>use C&lt;> for function, variable and module names</p>
+
+<p>use B&lt;> for commands names like cat or grep.</p>
+
+<p>use F&lt;> or C&lt;> for file names. F&lt;> should be the only Pod code for file names</p>
 
 <hr />
 

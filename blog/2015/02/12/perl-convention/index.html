@@ -9,8 +9,8 @@
   <meta name="author" content="forestrick">
 
   
-  <meta name="description" content="Perl Conventions Always use -w flags , use strict, even helpful&hellip; use sigtrap, use diagnostics Code format 4-column indent.
-Opening curly on &hellip;">
+  <meta name="description" content="Always use -w flags , use strict, even helpful&hellip; use sigtrap, use diagnostics Code format 4-column indent.
+Opening curly on same line as &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -120,9 +120,10 @@ Opening curly on &hellip;">
   </header>
 
 
-<div class="entry-content"><h1>Perl Conventions </h1>
+<div class="entry-content"><p>Always use <strong>-w flags</strong> , <strong>use strict</strong>, even helpful&hellip; <strong>use sigtrap</strong>, <strong>use diagnostics</strong></p>
 
-<p>Always use <strong>-w flags</strong> , <strong>use strict</strong>, even helpful&hellip; <strong>use sigtrap</strong>, <strong>use diagnostics</strong></p>
+<!--more-->
+
 
 <h2>Code format</h2>
 
@@ -163,6 +164,8 @@ Opening curly on &hellip;">
 </span><span class='line'><span class="n">is</span> <span class="n">better</span> <span class="n">than</span>
 </span><span class='line'><span class="nb">die</span> <span class="s">&quot;Can&#39;t open $foo: $!&quot;</span> <span class="k">unless</span> <span class="nb">open</span><span class="p">(</span><span class="n">FOO</span><span class="p">,</span><span class="nv">$foo</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
+
+
 
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -269,9 +272,11 @@ E.g., <code>$obj-&gt;as_string()</code>.</p>
 
 <p>Try to document your code and use Pod formatting in a consistent way.</p>
 
-<p>use C&lt;> for function, variable and module names
-use B&lt;> for commands names like cat or grep.
-use F&lt;> or C&lt;> for file names. F&lt;> should be the only Pod code for file names</p>
+<p>use C&lt;> for function, variable and module names</p>
+
+<p>use B&lt;> for commands names like cat or grep.</p>
+
+<p>use F&lt;> or C&lt;> for file names. F&lt;> should be the only Pod code for file names</p>
 
 <hr />
 
